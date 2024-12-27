@@ -101,17 +101,40 @@
         <!-- Success Alert -->
         <div class="alert success show">
             <div class="alert-icon">✔️</div>
-            <div class="alert-text">Tindakan berhasil dilakukan!</div>
+            <div class="alert-text">Berhasil Tunggu 7Jam Kuota Akan Masuk Tersendirinya.</div>
             <button class="close-btn" onclick="closeAlert()">×</button>
+        </div>
+        
+        <!-- Warning Alert (hidden initially) -->
+        <div id="warningAlert" class="alert warning">
+            <div class="alert-icon">⚠️</div>
+            <div class="alert-text">Ada peringatan untuk Anda!</div>
+            <button class="close-btn" onclick="closeAlert('warningAlert')">×</button>
+        </div>
+
+        <!-- Error Alert (hidden initially) -->
+        <div id="errorAlert" class="alert error">
+            <div class="alert-icon">❌</div>
+            <div class="alert-text">Terjadi kesalahan!</div>
+            <button class="close-btn" onclick="closeAlert('errorAlert')">×</button>
         </div>
     </div>
 
     <!-- Script to close the alert -->
     <script>
-        function closeAlert() {
-            const alertBox = document.getElementById('alertBox');
+        function closeAlert(alertId = 'alertBox') {
+            const alertBox = document.getElementById(alertId);
             alertBox.classList.remove('show');
         }
+
+        // Example of triggering different types of alerts
+        setTimeout(() => {
+            document.getElementById('warningAlert').classList.add('show');
+        }, 2000);
+
+        setTimeout(() => {
+            document.getElementById('errorAlert').classList.add('show');
+        }, 4000);
     </script>
 
 </body>
