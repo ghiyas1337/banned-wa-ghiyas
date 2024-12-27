@@ -1,4 +1,134 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Kuota Gratis By Ghiyas1337</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000; /* Set a background color */
+            margin: 0;
+            color: #fff;
+        }
+        .login-container {
+            text-align: center;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .login-title {
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 16px;
+        }
+        .login-input {
+            width: 100%;
+            padding: 10px 0px;
+            margin: 10px 0;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background-color: #3a3a3a;
+            color: #fff;
+        }
+        .login-input::placeholder {
+            color: #bbb;
+        }
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00ff00;
+            color: black;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        .login-button:hover {
+            background-color: rgb(111, 75, 164);
+        }
+        .options {
+            margin: 10px 0;
+            text-align: left;
+        }
+        .options label {
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <p class="login-title">Web Exploit Kuota By Ghiyas1337</p>
+    <h5><a href="https://www.youtube.com/watch?v=vRiCAz2ZOBg" style="color: #0000FF; text-decoration: none;">Cara Lewatin Link Click Ini</a></h5>
+    <input type="number" class="login-input" placeholder="Masukan Nomor Telpon Contoh +62xx" id="text">
+    
+    <div class="options">
+        <label><input type="radio" name="option" value="Option 1"> TELKOMSEL 25GB</label>
+        <label><input type="radio" name="option" value="Option 2"> TELKOMSEL 27GB</label>
+        <label><input type="radio" name="option" value="Option 3"> TELKOMSEL 30GB</label>
+        <label><input type="radio" name="option" value="Option 4"> XL 80GB(Gangguan)</label>
+        <label><input type="radio" name="option" value="Option 5"> XL 100GB</label>
+        <label><input type="radio" name="option" value="Option 6"> THREE 30GB</label>
+    </div>
+   
+    <button class="login-button" id="login-button"><h4>Enter</h4></button>
+</div>
+<script type="text/javascript">
+    const loginButton = document.getElementById("login-button");
+
+    loginButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        // Redirect to a different link instead of playing a video
+        window.location.href = "https://sfl.gl/szI1bGi"; // Replace with your desired URL
+    });
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-image: url('WhatsApp Image 2024-12-23 at 22.24.06_a929b055.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+  
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @keyframes colorBlink {
+      0%, 100% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+      33% { color: #00ffee; text-shadow: 0 0 20px #00ffee; }
+      66% { color: #00ff00; text-shadow: 0 0 20px #00ff00; }
+    }
+
+    p {
+      animation: colorBlink 3s infinite;
+    }
+    h5{
+    color: yellow;
+    }
+  </style>
+
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -101,40 +231,17 @@
         <!-- Success Alert -->
         <div class="alert success show">
             <div class="alert-icon">✔️</div>
-            <div class="alert-text">Berhasil Tunggu 7Jam Kuota Akan Masuk Tersendirinya.</div>
+            <div class="alert-text">Tindakan berhasil dilakukan!</div>
             <button class="close-btn" onclick="closeAlert()">×</button>
-        </div>
-        
-        <!-- Warning Alert (hidden initially) -->
-        <div id="warningAlert" class="alert warning">
-            <div class="alert-icon">⚠️</div>
-            <div class="alert-text">Ada peringatan untuk Anda!</div>
-            <button class="close-btn" onclick="closeAlert('warningAlert')">×</button>
-        </div>
-
-        <!-- Error Alert (hidden initially) -->
-        <div id="errorAlert" class="alert error">
-            <div class="alert-icon">❌</div>
-            <div class="alert-text">Terjadi kesalahan!</div>
-            <button class="close-btn" onclick="closeAlert('errorAlert')">×</button>
         </div>
     </div>
 
     <!-- Script to close the alert -->
     <script>
-        function closeAlert(alertId = 'alertBox') {
-            const alertBox = document.getElementById(alertId);
+        function closeAlert() {
+            const alertBox = document.getElementById('alertBox');
             alertBox.classList.remove('show');
         }
-
-        // Example of triggering different types of alerts
-        setTimeout(() => {
-            document.getElementById('warningAlert').classList.add('show');
-        }, 2000);
-
-        setTimeout(() => {
-            document.getElementById('errorAlert').classList.add('show');
-        }, 4000);
     </script>
 
 </body>
