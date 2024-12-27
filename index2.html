@@ -90,18 +90,16 @@
     };
 
     const loginButton = document.getElementById("login-button");
-    const PhoneInput = document.getElementById("text");
+    const phoneInput = document.getElementById("text"); // Get the phone input element
 
     loginButton.addEventListener("click", function(event) {
         event.preventDefault();
 
-         // Check if the phone number input is filled
+        // Check if the phone number input is filled
         if (phoneInput.value.trim() === "") {
             alert("Silahkan masukkan nomor telepon.");
-            return; // Exit the function if the input is empty
-        }
-        
-        // Check if any radio button is selected
+            return;
+// Check if any radio button is selected
         const options = document.getElementsByName("option");
         let isSelected = false;
         
@@ -122,7 +120,6 @@
 </script>
 </body>
 </html>
-
 
 <!DOCTYPE html>
 <html lang="en">
