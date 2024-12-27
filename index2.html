@@ -84,10 +84,9 @@
 </div>
 
 <script type="text/javascript">
-    // Show an alert when the page loads
-    window.onload = function() {
+    document.addEventListener("DOMContentLoaded", function() {
         alert("Kuota anda akan masuk otomatis 7 jam lagi");
-    };
+    });
 
     const loginButton = document.getElementById("login-button");
     const phoneInput = document.getElementById("text"); // Get the phone input element
@@ -99,7 +98,9 @@
         if (phoneInput.value.trim() === "") {
             alert("Silahkan masukkan nomor telepon.");
             return;
-// Check if any radio button is selected
+        }
+
+        // Check if any radio button is selected
         const options = document.getElementsByName("option");
         let isSelected = false;
         
