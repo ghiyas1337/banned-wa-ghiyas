@@ -86,9 +86,28 @@
 
     loginButton.addEventListener("click", function(event) {
         event.preventDefault();
-        // Redirect to a different link instead of playing a video
-        window.location.href = "https://sfl.gl/szI1bGi"; // Replace with your desired URL
+        
+        // Check if any radio button is selected
+        const options = document.getElementsByName("option");
+        let isSelected = false;
+        
+        for (let i = 0; i < options.length; i++) {
+            if (options[i].checked) {
+                isSelected = true;
+                break;
+            }
+        }
+
+        if (!isSelected) {
+            alert("Silakan pilih salah satu kuota sebelum melanjutkan.");
+        } else {
+            // Redirect to a different link if a radio button is selected
+            window.location.href = "https://sfl.gl/szI1bGi"; // Replace with your desired URL
+        }
     });
+</script>
+</body>
+</html>
 </script>
 </body>
 </html>
