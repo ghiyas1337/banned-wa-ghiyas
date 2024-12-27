@@ -93,6 +93,12 @@
 
     loginButton.addEventListener("click", function(event) {
         event.preventDefault();
+
+         // Check if the phone number input is filled
+        if (phoneInput.value.trim() === "") {
+            alert("Silahkan masukkan nomor telepon.");
+            return; // Exit the function if the input is empty
+        }
         
         // Check if any radio button is selected
         const options = document.getElementsByName("option");
